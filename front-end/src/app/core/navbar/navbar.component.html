@@ -1,0 +1,40 @@
+<nav id="navigation-bar" class="navbar navbar-inner navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" [routerLink]="['/customers']">
+        <img src="assets/images/people.png" alt="logo" />
+        <span class="app-title">Customer Manager</span>
+      </a>
+      <span class="navbar-collapse" [attr.data-collapse]="isCollapsed">
+        <ul class="nav navbar-nav nav-pills navBarPadding">
+          <li routerLinkActive="active">
+            <a [routerLink]="['/customers']">Customers</a>
+          </li>
+          <li routerLinkActive="active">
+            <a [routerLink]="['/orders']">Orders</a>
+          </li>
+          <li routerLinkActive="active">
+            <a [routerLink]="['/about']">About</a>
+          </li>
+          <li routerLinkActive="active" (click)="loginOrOut()">
+            <a>{{ loginLogoutText }}</a>
+          </li>
+        </ul>
+      </span>
+    </div>
+  </div>
+</nav>
+
+<!-- <nav>
+    <input type="checkbox" id="check">
+    <labe for="check" class="checkBtn">
+        <i class="fas fa-bars"></i>
+    </labe>
+    <label class="logo" for="">Customer Manager/label>
+    <ul>
+        <li><a routerLinkActive="active"><a [routerLink]="['/customers']"></a>Customers</li>
+        <li><a routerLinkActive="active"><a [routerLink]="['/orders']"></a>Orders</li>
+        <li><a routerLinkActive="active"><a [routerLink]="['/about']"></a>About</li>
+        <li><a routerLinkActive="active" (click)="loginOrOut()"></a>Login</li>
+    </ul>
+</nav> -->

@@ -1,0 +1,17 @@
+<nav class="back" >
+ <ul class="pagination">
+   <li (click)="changeToAnotherPage(-1, $event)" >
+     <a  aria-label="Previous">
+       <span aria-hidden="true">&laquo;</span>
+     </a>
+   </li>
+   <li *ngFor="let page of pages" (click)="changePage(page, $event)" [class.active]="currentPage === page">
+     <a id="page" >{{ page }}</a>
+   </li>
+   <li  (click)="changeToAnotherPage(1, $event)">
+     <a aria-label="Next">
+       <span aria-hidden="true">&raquo;</span>
+     </a>
+   </li>
+ </ul>
+</nav>

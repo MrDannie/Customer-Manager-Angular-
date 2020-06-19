@@ -1,0 +1,86 @@
+.card-container {
+  width: 90%;
+}
+.card {
+  display: grid;
+  width: 100%;
+  height: 120px;
+  border-radius: 0px 20px 0px 20px;
+  grid-template: 100% / 100%;
+  box-shadow: 1px 1px 5px grey;
+  margin-bottom: 20px;
+  padding-bottom: 4px;
+}
+
+.card-content {
+  display: grid;
+  grid-template-columns: 50px auto;
+  grid-template-rows: auto;
+}
+.image-and-editIcon {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 20px;
+  justify-content: center;
+}
+.card-image {
+  height: 50px;
+  width: 50px;
+}
+.edit-icon {
+  display: grid;
+  align-content: end;
+  justify-content: center;
+}
+.customer-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  align-content: space-between;
+}
+
+.card-header {
+  background-color: goldenrod;
+  color: white;
+  padding: 5px 8px 5px 8px;
+  width: 100%;
+  font-size: 12pt;
+  border-radius: 15px;
+}
+.card-body-city {
+  width: 100px;
+  font-size: 14px;
+  padding-left: 11px;
+}
+
+.view-order-btn {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 20px;
+}
+.view-order-btn a {
+  width: 100%;
+  font-size: 15px;
+  color: rgb(170, 123, 3);
+}
+.view-order-btn {
+  width: 100%;
+  font-size: 12pt;
+  border-radius: 15px;
+}
+.view-order-btn a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.card-header a,
+.image-and-editIcon a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.glyphicon {
+  color: rgb(250, 180, 3);
+  font-size: 20px;
+  text-decoration: none;
+}
